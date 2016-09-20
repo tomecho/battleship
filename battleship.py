@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 import pdb
-from .board import board
+from lib.board import Board
 
 def setup(ships_each):
     for j in range(2):
@@ -13,4 +13,4 @@ def setup(ships_each):
             board.insert_ship(point, direction, 4, name) 
 
 board = Board(16)
-setup()
+setup(3)

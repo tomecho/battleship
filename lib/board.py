@@ -12,16 +12,16 @@ class Board:
             return # dont add the ship
         self.ships.append(uid)
 
-        if direction = "N":
+        if direction is "N":
             for i in range(length):
                 self.board[point(0)+i][point(1)] = uid
-        elif direction = "S":
+        elif direction is "S":
             for i in range(length):
                 self.board[point(0)-i][point(1)] = uid
-        elif direction = "E":
+        elif direction is "E":
             for i in range(length):
                 self.board[point(0)][point(1)+i] = uid
-        elif direction = "W":
+        elif direction is "W":
             for i in range(length):
                 self.board[point(0)][point(1)-i] = uid
 
@@ -29,3 +29,4 @@ class Board:
 
     def check_in_range(self, point, direction, length):
         # todo: implement this
+        return
