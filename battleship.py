@@ -4,10 +4,10 @@ from lib.board import Board
 
 def setup(ships_each):
     for j in range(2):
-        print('player' + j + 'selct your ships!')
+        print('player' + str(j) + 'selct your ships!')
         for i in range(ships_each):
             name = input('Name your ship (must be unique): ')
-            name += j # this is how we identify the ship
+            name += str(j) # this is how we identify the ship
             point = input('Initial point: ')
             direction = input('Direction (N,S,E,W): ')
             board.insert_ship(point, direction, 4, name) 
