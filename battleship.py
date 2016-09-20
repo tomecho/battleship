@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 import pdb
+from .board import board
 
 def setup(ships_each):
     for j in range(2):
