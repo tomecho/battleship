@@ -10,7 +10,7 @@ def setup(ships_each):
             name += str(j) # this is how we identify the ship
             point_x = input('Initial point(x): ')
             point_y = input('Initial point(y): ')
-            point = (point_y,point_x)
+            point = (int(point_y),int(point_x))
             direction = input('Direction (N,S,E,W): ')
             board.insert_ship(point, direction, 4, name) 
 
