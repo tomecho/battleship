@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 import pdb
 from lib.board import Board
-import os
-print(os.getcwd()) 
+import sys
+sys.path.append('my/path/to/module/folder')
 #from IPython import embed
 
 def setup(ships_each):
