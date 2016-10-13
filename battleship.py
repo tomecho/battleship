@@ -1,6 +1,9 @@
 #!/usr/bin/python3
 import pdb
 from lib.board import Board
+import os
+print(os.getcwd()) 
+#from IPython import embed
 
 def setup(ships_each):
     for j in range(2):
@@ -13,6 +16,7 @@ def setup(ships_each):
             point = (int(point_y),int(point_x))
             direction = input('Direction (N,S,E,W): ')
             board.insert_ship(point, direction, 4, name) 
+        embed()
 
 board = Board(16)
 setup(3)

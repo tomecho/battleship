@@ -10,7 +10,10 @@ class Board:
         if uid in self.ships:
             print("there is already a ship with that name!")
             return # dont add the ship
-        self.ships.append(uid)
+        if not self.board[point[0], point[1]] is "miss":
+            print("there is already a ship there!")
+            return # dont add the ship
+        self.ships.append(uid) # do add the ship
 
         if direction is "N":
             for i in range(length):
