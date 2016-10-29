@@ -10,7 +10,9 @@ class Board:
         if uid in self.ships:
             print("there is already a ship with that name!")
             return # dont add the ship
-        if not self.board[point[0], point[1]] is "miss":
+        # import ipdb; ipdb.set_trace()
+        print(point[0])
+        if not self.board[point[0]][point[1]] is "miss":
             print("there is already a ship there!")
             return # dont add the ship
         self.ships.append(uid) # do add the ship
