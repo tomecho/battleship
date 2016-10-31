@@ -18,5 +18,13 @@ def setup(ships_each):
                 if board.insert_ship(point, direction, 4, name):
                     break
 
+def play():
+    i=0
+    while True:
+        player = "1" if i % 2 is 0 else "2"
+        print('move ' + str(i) + 
+
+
 board = Board(16)
 setup(3)
+play()
