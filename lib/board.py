@@ -49,7 +49,7 @@ class Board:
         for i in range(2):
             part = []
             for ship in self.ships:
-                part.push(ship) if ship.endswith(i)
+                if ship.endswith(str(i)): part.push(ship) 
             split_ships.push(part)
         return split_ships
 
