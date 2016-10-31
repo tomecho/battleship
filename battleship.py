@@ -24,7 +24,10 @@ def play():
         # check winner condition
         ships = board.ships_by_player()
         if len(ships) is 1: # there is a winner
-            ships[0]
+            first = ship[0]
+            player = first[len(first)-1] # ships last character is actually the id
+            print('Player ' + player + ' wins')
+            return
 
         # there is no winner we must continue the battle(ship)
         player = "1" if i % 2 is 0 else "2"
