@@ -21,9 +21,14 @@ def setup(ships_each):
 def play():
     i=0
     while True:
-        player = "1" if i % 2 is 0 else "2"
-        print('move ' + str(i) + 
+        # check winner condition
+        ships = board.ships_by_player()
+        if len(ships) is 1: # there is a winner
+            ships[0]
 
+        # there is no winner we must continue the battle(ship)
+        player = "1" if i % 2 is 0 else "2"
+        print('move ' + str(i) + ' player ' + player + "'s move")
 
 board = Board(16)
 setup(3)
