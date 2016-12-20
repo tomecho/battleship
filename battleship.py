@@ -40,5 +40,5 @@ def play():
         print('target hit!') if board.attack(point) else print('target miss!')
 
 board = Board(16)
-setup(3)
+setup(1)
 play()

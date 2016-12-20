@@ -38,7 +38,7 @@ class Board:
         True if not self.board[point[0]][point[1]] is "miss" else False
 
     def attack(self, point):
-        if check_point(point):
+        if self.check_point(point):
             self.board[point[0]][point[1]] = "boom"
             return True
         else:
@@ -49,8 +49,8 @@ class Board:
         for i in range(2):
             part = []
             for ship in self.ships:
-                if ship.endswith(str(i)): part.push(ship) 
-            split_ships.push(part)
+                if ship.endswith(str(i)): part.append(ship) 
+            split_ships.append(part)
         return split_ships
 
     def check_in_range(self, point, direction, length):
