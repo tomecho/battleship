@@ -38,6 +38,7 @@ def play():
         point_y = input('strike point(y): ')
         point = (int(point_y),int(point_x))
         print('target hit!') if board.attack(point) else print('target miss!')
+        i += 1
 
 board = Board(16)
 setup(1)
