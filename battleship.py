@@ -33,7 +33,7 @@ def play():
         # there is no winner we must continue the battle(ship)
         player = "1" if i % 2 is 0 else "2"
         print('move ' + str(i) + ' player ' + player + "'s move")
-        input('player ' + player + ' launch #' + str(math.ceil((i+1)/2)))
+        print('player ' + player + ' launch #' + str(math.ceil((i+1)/2)))
         point_x = input('strike point(x): ')
         point_y = input('strike point(y): ')
         point = (int(point_y),int(point_x))
